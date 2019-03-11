@@ -69,7 +69,7 @@ a:hover{
 .header{
     height:70%;
     display: flex;
-    background-image: url(/obrazki/171211ap3446_FPX-lights-dots-red-defocused.jpg);
+    background-image: url(./obrazki/171211ap3446_FPX-lights-dots-red-defocused.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
