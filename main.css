@@ -140,7 +140,7 @@ a:hover{
     height: 50%;
     border: 10px white solid;
     align-items: center;
-    background-image: url(../obrazki/grossglockner-road-austria-picjumbo-com.jpg);
+    background-image: url(obrazki/grossglockner-road-austria-picjumbo-com.jpg);
     background-size: cover;
     background-position: center ;
     background-repeat: no-repeat;
@@ -198,7 +198,7 @@ a:hover{
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
-    background-image: url(../obrazki/elk-on-a-meadow-during-dawn-vertical-picjumbo-com.jpg);
+    background-image: url(obrazki/elk-on-a-meadow-during-dawn-vertical-picjumbo-com.jpg);
     background-position: 0 70%;
     background-size: cover;
     background-attachment: scroll;
@@ -336,7 +336,7 @@ a:hover{
     flex: 1;
     border: 10px white solid;
     border-bottom: 3px white solid;
-    background-image: url(../obrazki/snow-texture-free-download-picjumbo-com.jpg);
+    background-image: url(obrazki/snow-texture-free-download-picjumbo-com.jpg);
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
