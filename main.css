@@ -358,7 +358,7 @@ a:hover{
     flex: 1;
     border: 10px white solid;
     border-bottom: 3px white solid;
-    background-image: url(obrazki/snow-texture-free-download-picjumbo-com.jpg);
+    background-image: url(obrazki/cityscape-view-of-financial-district-skyscrapers-in-san-francisco-california-picjumbo-com.jpg);
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -384,7 +384,9 @@ a:hover{
 }
 .life{
     height: 70%;
+    width: 100%;
     display: flex;
+    
 }
 .life1{
     font-size: 1.5rem;
@@ -392,7 +394,13 @@ a:hover{
     padding:10%;
     color: rgb(219, 87, 120);
     padding-top:2%;
+    background-color: hsla(164, 0%, 100%, 0.6);
+    border-radius: 5%;
+    margin-left:5%;
+    margin-right:5%;
 }
+
+
 /* footer here */
 
 .footer{
