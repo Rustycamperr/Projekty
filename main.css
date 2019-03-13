@@ -13,6 +13,7 @@ body {
 }
 /*whole top*/
 .sectiontop {
+    
     min-height:8rem;   
     max-height: 8rem;
     position: fixed;
@@ -22,7 +23,6 @@ body {
 .menu {
     height:30%;
     background: linear-gradient(to right, blue,rgb(58, 194, 240),purple,plum,pink,rgb(243, 106, 106));
-    
 }
 .menu ul{
     display: flex;
@@ -61,6 +61,7 @@ a {
     color: white;
     transition: 1s ease-in-out;
     width: 100%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 a:hover{
     transform: scale(1.5) rotate(-360deg);
@@ -69,18 +70,19 @@ a:hover{
 .header{
     height:70%;
     display: flex;
-    background-image: url(../obrazki/171211ap3446_FPX-lights-dots-red-defocused.jpg);
+    background-image: url(../obrazki/parked-cars-near-diamond-beach-iceland-picjumbo-com.jpg);
+    color: white;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
-    background-position: center;
+    background-position: 0 70%;
+    background-attachment: scroll;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border: 2px solid white;
+    border-bottom: 4px solid white;
     animation-name: greeting;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
+    /* obadaj potem border botom */
 }
 .header .baner {
     height:60%;    
@@ -94,6 +96,7 @@ a:hover{
     animation-name: greeting;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .greeting {
     height: 40%;
@@ -107,95 +110,265 @@ a:hover{
     animation-name: greeting;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 @keyframes greeting{
     0% {opacity:0;}
     100% {opacity:1;}
-}
-.menu {
-    height: 30%;
-    background: linear-gradient(to right, blue, rgb(58, 194, 240), purple, plum, pink, rgb(243, 106, 106));
-
-}
-
-.menu ul {
-    display: flex;
-    list-style: none;
-    border: solid 2px white;
-    border-bottom: 0px;
-    min-height: 20%;
-}
-
-.menu li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 3;
-    flex: 1;
-    border: white solid 1px;
-    border-left: 0;
-    border-bottom: 0;
-    overflow: hidden;
-}
-
-li#norm {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    flex-grow: 2.5;
-}
-
-li#sc {
-    flex-grow: 1;
-    font-weight: 700;
-}
-
-a {
-    text-decoration: none;
-    text-align: center;
-    height: auto;
-    font-size: 1.5rem;
-    color: white;
-    transition: 1s ease-in-out;
-    width: 100%;
-}
-
-a:hover {
-    transform: scale(1.5) rotate(-360deg);
 }
 /* main */
 .content {
     display: flex;
     background-color: white;
     padding-top:8rem;
+    height: 100%;
 }
 /*left side of content/main section*/
 .left {
-    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
     display: flex;
     flex-direction: column;
-    background-image: url(./obrazki/171211ap3446_FPX-lights-dots-red-defocused.jpg);
     flex:1;
+    padding-bottom: 1.5rem;
+    height: 1771px;
 }
 #up{
-    display:inherit;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 143, 143);
     height: 50%;
+    border: 10px white solid;
+    align-items: center;
+    background-image: url(../obrazki/grossglockner-road-austria-picjumbo-com.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    min-height: 273px;
+    max-height: 25%;
+}
+#up h2{
+    font-size: 2rem;
+    height: auto;
+    padding-top:5px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    color:rgb(255, 255, 255);
+    background-color: hsla(164, 0%, 100%, 0.7);
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-bottom: 20px;
+}
+#p2{
+    margin-bottom: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    min-height: 173px;
+    max-height: 175px;
+}
+#up p{
+    display: flex;
+    font-size: 1.3rem;
+    flex:2;
+    height: 100%;
+    width:450px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border:2px solid white;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: hsla(164, 0%, 100%, 0.7);
+    border-radius:  25%;
+    letter-spacing: 1px;
+
 }
 #down{
-    background-color: plum;
-    height: 50%;
-    padding-bottom: 
+    display: flex;
+    flex-direction: column;
+    border: 2px white solid;
+    border-top: 0px;
+    min-height: 273px;
+}
+.topic{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../obrazki/elk-on-a-meadow-during-dawn-vertical-picjumbo-com.jpg);
+    background-position: 0 70%;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    flex:2;
+    border: 10px white solid;
+    width: 100%;
+    /* ZASTANOWIE SIE JESZCZE */
+}
+.top1{
+    height: 3rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.top1 h2{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    color: rgb(129, 176, 230);
+    
+}
+.toppod{
+    height: 1.9rem;
+    margin-bottom: 10px;
+}
+.toppod h3{
+    font-style: italic;
+    font-weight: 500;
+    font-size:2.2rem;
+    text-align: center;
+    color: rgb(129, 176, 230);
+    text-decoration-color: white;
+    letter-spacing: 1px;
+}
+.topic hr{
+    height: 20px;
+    background-color: white;
+    margin-top: 4%;
+    margin-bottom: 9%;
+    width: 80%;
+    margin-left: 10%;
+}
+.textt{
+    height: 45%;
+    margin-top:4%;
+    padding-left:5%;
+    padding-right: 5%;   
+    padding-bottom: 5%;
+}
+.textt p{
+    padding-top:5%;
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(43, 82, 92);
+    background-color: hsla(164, 0%, 100%, 0.6);
+    border-radius: 8%;
+}
+.galery2{
+    height: all;
+    background-color: hsla(164, 0%, 100%, 0.6);
+    display: flex;
+    padding: 5%;
+    align-items: center;
+}
+.image1{
+    padding-right: 3%;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+}
+.image2{
+    transition: 1s ease-in-out;
+    overflow: hidden;
+}
+.image1:hover{
+    transform: scale(2);
+    transform-origin: left;
+}
+.image2:hover{
+    transform: scale(2);
+    transform-origin: right;
 }
 
 /* right side of content/main section */
 .right {
-    background-color:red;
-    display:flex;
+    background-color:black;
+    height: auto;
     flex:1;
 }
+.galery {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    border-top:0;
+    border-left:2px white solid;
+    border-bottom: 2px white solid;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-right: 0;
+    background-color: black;
+    min-width: 450px;
+}
+.photo1{
+    position: relative;
+}
+.photo1 .more{
+    position: absolute;
+    opacity: 0;
+    transition: 1.5s ease-in-out;
+}
+.more{
+    display: block;
+    position: absolute;
+    background-color: black;
+    color: white;
+    height: auto;
+    text-align: center;
+    line-height: ;
+    width: 100%;
+    left:0;
+    bottom:0;
+    margin-bottom: 4px;
+    font-size: 1.5rem;
+}
+.photo1:hover .more{
+    opacity: 0.7;
+}
 
+.about {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    flex: 1;
+    border: 10px white solid;
+    border-bottom: 3px white solid;
+    background-image: url(../obrazki/snow-texture-free-download-picjumbo-com.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+.me {
+    padding-top:1.5rem;
+    height: 4rem;
+    text-align: center;
+}
+#Konrad{
+    font-size: 2.5rem;
+    line-height: auto;
+    color: blue;
+}
+.about hr{
+    height: 1%;
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+.life{
+    height: 70%;
+    display: flex;
+    
+}
+.life1{
+    font-size: 1.5rem;
+    text-align: center;
+    padding:10%;
+}
 /* footer here */
 
 .footer{
@@ -210,9 +383,7 @@ a:hover {
     opacity: 0,8;
     background: linear-gradient(to right, blue, rgb(58, 194, 240), purple, plum, pink, rgb(243, 106, 106));
     color: white;
-    font-family: Arial,
-    Helvetica,
-    sans-serif;
+    font-family: Arial,Helvetica,sans-serif;
     vertical-align: center;
     padding-left: 60px;
     line-height: 1.5rem;
