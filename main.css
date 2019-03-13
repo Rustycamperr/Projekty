@@ -290,10 +290,7 @@ a:hover{
 .image2:hover{
     transform: scale(2);
     transform-origin: right;
-     width: auto;
-     height: auto;
-     max-width: 650px;
-     max-height: 350px;
+    
 }
 
 /* right side of content/main section */
@@ -305,6 +302,7 @@ a:hover{
     height: 1760px;
     border: white solid 2px;
     max-width: 50%;
+    padding-bottom: 1.6rem;
 }
 .galery {
     
@@ -313,17 +311,23 @@ a:hover{
     border-top:2px white solid;
     border-left:2px white solid;
     border-bottom: 2px white solid;
-    height: auto;
-    align-items: center;
-    justify-content: center;
+    height: 1771px;
     padding: 5px;
     border-right: 0;
     background-color: black;
     min-width: 450px;
-   
+    object-fit: cover;
+    padding-bottom: 1.5rem;
 }
 .photo1{
     position: relative;
+    flex-grow: 1;
+    height: 20%;
+    width: auto;
+    object-fit: contain;
+    justify-content: space-between;
+    border-bottom:4px black solid;
+    
 }
 .photo1 .more{
     position: absolute;
