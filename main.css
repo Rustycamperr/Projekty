@@ -70,7 +70,7 @@ a:hover{
 .header{
     height:70%;
     display: flex;
-    background-image: url(./obrazki/parked-cars-near-diamond-beach-iceland-picjumbo-com.jpg);
+    background-image: url(obrazki/parked-cars-near-diamond-beach-iceland-picjumbo-com.jpg);
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
